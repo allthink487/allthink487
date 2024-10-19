@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    gap: 10px;
+    margin: 0 30px;
+
+}
+.header{
+    display: flex;
+    height: 7%;
+    background-color: rgb(253, 253, 253);
+    padding: 7px;
+    justify-content: space-between;
+    border-bottom: 5px solid rgb(102, 102, 102);
+}
+.btnSearch{
+    width:50% ;
+    height: 100%;
+ 
+    display: flex;
+    gap: 10px;
+}
+.btnSearch input{
+    padding: 5px;
+    width: 100% ;
+    background-color: black;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 5px
+}
+.btnSearch button{
+
+    padding: 5px;
+    background-color: black;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 5px
+}
+
+
+
+.btnConnexion{
+    display: flex;
+    gap: 10px;
+   
+}
+.btnConnexion button{
+    height: 100%;
+    padding: 10px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 7px;
+
+}
+.btnConnexion button a{
+    color: black;
+    text-decoration: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.divImg{
+    width: 100%;
+    height: 30%;
+    overflow-x: auto; 
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 10px; 
+    border: 1px solid white;
+    padding: 15px;
+    
+
+
+}
+
+.divImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.cont{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    padding: 15px;
+    background-color: black;
+
+    
+}
+.link{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px ;
+    
+}
+
+.link a{
+    list-style: none;
+    text-decoration: 0;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 500px;
+    padding: 5px;
+    transition: 0.5s ease-in;
+    
+}
+
+.link div a:hover{
+    background-color: rgb(53, 53, 53);
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(58, 58, 58);
+    font-weight: 900;
+    font-size: 20px;
+
+}
+.content{
+    line-height: 25px;
+    text-align: left;
+    letter-spacing: 1px;
+    padding: 15px;
+    
+}
+

@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editer</title>
+    <link rel="stylesheet" href="old.css">
+</head>
+<body>
+    <header>
+        <h1>thePost</h1>
+        <p>veillez noter que vous pouvez editer seulement votre derniere message et que si vous vous deconnecter ou que une 120H apres sa publication vous ne pouvez plus l'Editer</p>
+    </header>
+    <div class="link">
+        <div><a href="home.html">Publish</a></div>
+        <div><a href="post.html">Post</a></div>
+    </div>
+    <form action="http://localhost:8080/edit" method="post" enctype="multipart/form-data">
+        <label for="name">Titre</label>
+        <input type="text" name="name" id="inp" placeholder="Titre" value="jjjj">
+
+        <label for="describ">Contenu du Post</label>
+        <textarea name="describ" id="" placeholder="Racontez..."></textarea>
+        
+
+        <label for="img">image</label>
+        <input type="file" name="img" id="inpfile" multiple>
+
+        <button type="submit">Editer</button>
+    </form>
+
+
+    <script src="edit.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="old.css">
+</head>
+<body>
+    
+    <header>
+        <h1>thePost</h1>
+        <p>veillez poster en toute respect</p>
+    </header>
+    <div class="link">
+        <div><a href="home.html">Publish</a></div>
+        <div><a href="post.html">Post</a></div>
+        <div><a href="edit.html">Editer</a></div>
+    </div>
+    <form action="http://localhost:8080/publish" method="post" enctype="multipart/form-data">
+        <label for="name">Titre</label>
+        <input type="text" name="name" id="inp" placeholder="Titre" required>
+
+        <label for="describ">Contenu du Post</label>
+        <textarea name="describ" id="" placeholder="Racontez..." required></textarea>
+
+        <label for="img">image</label>
+        <input type="file" name="img" id="inpfile" multiple>
+
+        <button type="submit">Publier</button>
+    </form>
+
+</body>
+</html>
